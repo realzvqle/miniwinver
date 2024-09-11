@@ -1,0 +1,4 @@
+all:
+	cl /c src/main.c 
+	link main.obj shell32.lib /entry:_entry /OUT:minwinver.exe /subsystem:windows
+	del *.obj
