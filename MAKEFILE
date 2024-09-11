@@ -1,4 +1,4 @@
 all:
 	cl /c src/main.c 
-	link main.obj shell32.lib /entry:_entry /OUT:minwinver.exe /subsystem:windows
+	link main.obj shell32.lib kernel32.lib /entry:_entry /OUT:minwinver.exe /subsystem:windows
 	del *.obj
